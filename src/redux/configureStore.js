@@ -1,11 +1,8 @@
-import {createStore, combineReducers, applyMiddleware } from 'redux';
-import { Reducer, initialState } from './reducer';
+import {createStore, combineReducers } from 'redux';
 import { Campsites } from './campsites';
 import { Comments } from './comments';
 import { Partners } from './partners';
 import { Promotions } from './promotions';
-import thunk from 'redux-thunk';
-import logger from 'redux-logger';
 
 export const ConfigureStore = () => {
     const store = createStore(
